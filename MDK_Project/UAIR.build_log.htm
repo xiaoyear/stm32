@@ -1,0 +1,120 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: XiaoYe Microsoft, Microsoft, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.21a
+Toolchain Path:  F:\IDE\MDK-ARM\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+D:\Ð¡Ò¹\ÅÉÏÍ\ÎÂÊª¶ÈÔ´Âë\UAIR\MDK_Project\Project.uvprojx
+Project File Date:  02/24/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'F:\IDE\MDK-ARM\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling sim800c.c...
+..\User\sim800c.c(58): warning:  #223-D: function "delay_ms" declared implicitly
+  	delay_ms(2000);
+..\User\sim800c.c(67): warning:  #223-D: function "delay_ms" declared implicitly
+  	delay_ms(2000);
+..\User\sim800c.c(188): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			if(strncmp(sim800_rec_buf+11,"+CPIN: READY",12) == 0)
+..\User\sim800c.c(213): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			if(strncmp(sim800_rec_buf+12,"+CGATT: 1",9) == 0)
+..\User\sim800c.c(237): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			if(strncmp(sim800_rec_buf+16,"OK",2) == 0)
+..\User\sim800c.c(261): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			if(strncmp(sim800_rec_buf+11,"OK",2) == 0)
+..\User\sim800c.c(312): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			if((strncmp(sim800_rec_buf+44,"CONNECT OK",10) == 0)
+..\User\sim800c.c(313): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				|| (strncmp(sim800_rec_buf+44,"ALREADY CONNECT",7) == 0)
+..\User\sim800c.c(314): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				|| (strncmp(sim800_rec_buf+45,"CONNECT OK",10) == 0)
+..\User\sim800c.c(315): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				|| (strncmp(sim800_rec_buf+45,"ALREADY CONNECT",7) == 0)
+..\User\sim800c.c(316): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				|| (strncmp(sim800_rec_buf+46,"CONNECT OK",10) == 0)
+..\User\sim800c.c(317): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				|| (strncmp(sim800_rec_buf+46,"ALREADY CONNECT",7) == 0)
+..\User\sim800c.c(318): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				|| (strncmp(sim800_rec_buf+43,"CONNECT OK",10) == 0)
+..\User\sim800c.c(319): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  				|| (strncmp(sim800_rec_buf+43,"ALREADY CONNECT",7) == 0)
+..\User\sim800c.c(341): warning:  #223-D: function "IWDG_Feed" declared implicitly
+  				IWDG_Feed();
+..\User\sim800c.c(352): warning:  #223-D: function "IWDG_Feed" declared implicitly
+  				IWDG_Feed();
+..\User\sim800c.c(372): warning:  #223-D: function "net_buffer_input" declared implicitly
+  			net_buffer_input(sim800_rec_buf[i]);
+..\User\sim800c.c(410): warning:  #223-D: function "IWDG_Feed" declared implicitly
+  				IWDG_Feed();
+..\User\sim800c.c(416): warning:  #223-D: function "net_buffer_input" declared implicitly
+  				net_buffer_input(sim800_rec_buf[i]);
+..\User\sim800c.c(426): warning:  #223-D: function "yeDataSumCheck" declared implicitly
+  					if(yeDataSumCheck(&sim800_rec_buf[i],pos-i) == 0)
+..\User\sim800c.c(428): warning:  #223-D: function "yeDataProcess" declared implicitly
+  						yeDataProcess(&sim800_rec_buf[i],pos-i);
+..\User\sim800c.c(434): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			if(strstr(sim800_rec_buf,"+PDP: DEACT") != NULL)
+..\User\sim800c.c(445): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  			else if(strstr(sim800_rec_buf,"CONNECT FAIL") != NULL)
+..\User\sim800c.c(380): warning:  #550-D: variable "recvRecv" was set but never used
+  	char recvRecv = 0;
+..\User\sim800c.c(474): warning:  #223-D: function "net_send" declared implicitly
+  	net_send(p,num);
+..\User\sim800c.c(495): warning:  #223-D: function "yeDumpBuf" declared implicitly
+  		yeDumpBuf(jsonBuf,sizeof(jsonBuf));
+..\User\sim800c.c(496): warning:  #223-D: function "yeDataSendComBine" declared implicitly
+  		len = yeDataSendComBine(0,jsonBuf,sizeof(jsonBuf)-1,hexStr);
+..\User\sim800c.c(497): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		send_sync_data(hexStr,len);
+..\User\sim800c.c(507): warning:  #223-D: function "yeDumpBuf" declared implicitly
+  		yeDumpBuf(jsonBuf,len);
+..\User\sim800c.c(509): warning:  #223-D: function "yeDataSendComBine" declared implicitly
+  		len = yeDataSendComBine(0x90,jsonBuf,len,hexStr);
+..\User\sim800c.c(510): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		send_sync_data(hexStr,len);
+..\User\sim800c.c(519): warning:  #223-D: function "clr_buf" declared implicitly
+  	clr_buf();
+..\User\sim800c.c: 32 warnings, 0 errors
+linking...
+Program Size: Code=19172 RO-data=836 RW-data=292 ZI-data=2100  
+FromELF: creating hex file...
+".\UAIR.axf" - 0 Error(s), 32 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  D:\Ð¡Ò¹\ÅÉÏÍ\ÎÂÊª¶ÈÔ´Âë\UAIR\MDK_Project\RTE
+  F:\IDE\MDK-ARM\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  F:\IDE\MDK-ARM\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:12
+</pre>
+</body>
+</html>
